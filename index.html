@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>Tổng hợp công cụ tính toán</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1>
+        TỔNG HỢP CÔNG CỤ TÍNH TOÁN
+    </h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>💰 Tính tiền lương</h2>
+            <input type="number" id="salaryDay" placeholder="Nhập lương một ngày">
+            <input type="number" id="workDay" placeholder="Số ngày làm">
+            <button onclick="salaryCalc()">
+                Tính lương
+            </button>
+             <div  id="salaryResult" class="result" >
+                👉 <span id="salaryText"></span>
+             </div>
+        </div>
+
+
+        <div class="card">
+            <h2>📊 Giá trị trung bình</h2>
+            <div class="average-group">
+                <input type="number" id="n1" placeholder="Số thứ 1">
+                <input type="number" id="n2" placeholder="Số thứ 2">
+                <input type="number" id="n3" placeholder="Số thứ 3">
+                <input type="number" id="n4" placeholder="Số thứ 4">
+                <input type="number" id="n5" placeholder="Số thứ 5">
+            </div>
+            <button onclick="averageCalc()">
+                Tính trung bình
+            </button>
+            <div id="averageResult" class="result">
+                  👉 <span id="salaryText"></span>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <h2>💱 Quy đổi USD</h2>
+            <input type="number" id="usd" placeholder="Nhập số tiền USD">
+            <button onclick="currencyCalc()">
+                Quy đổi
+            </button>
+            <div id="currencyResult" class="result">
+                  👉 <span id="salaryText"></span>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <h2>📏 Hình chữ nhật</h2>
+            <input type="number" id="length" placeholder="Nhập chiều dài">
+            <input type="number" id="width" placeholder="Nhập chiều rộng">
+            <button onclick="rectangleCalc()">
+                Tính
+            </button>
+            <div id="rectangleResult" class="result">
+                  👉 <span id="salaryText"></span>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>🧮 Tổng ký số</h2>
+            <input type="number" id="number" placeholder="Nhập số có 2 chữ số">
+            <button onclick="digitSumCalc()">
+                Tính
+            </button>
+            <div id="digitResult" class="result">
+                  👉 <span id="salaryText"></span>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/salary.js"></script>
+    <script src="js/average.js"></script>
+    <script src="js/currency.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/digitSum.js"></script>
+
+</body>
+
+</html>
